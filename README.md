@@ -5,11 +5,11 @@ Wandb Report Link - https://wandb.ai/alokgaurav04-indian-institute-of-technology
 
 Github Report Link - https://github.com/alokgaurav04/DA6401_Assignment_2
 
-#PART - A : Training from scratch
+# PART - A : Training from scratch
 
-   #Question - 1 :
+   # Assignment_2_Part_A.ipynb"
    
-    Code for CNN is provided in github with the name "Assignment_Part_A.ipynb"
+    Code for CNN is provided in github with the name "Assignment_2_Part_A.ipynb"
 
     # I used google colab for training using GPU and uploaded the iNaturalist.zip file to google drive , hence I need to mount the drive first 
     from google.colab import drive
@@ -22,11 +22,17 @@ Github Report Link - https://github.com/alokgaurav04/DA6401_Assignment_2
     DATA_DIR = "/content/inaturalist_12K"
     
     For Flexibility , the code for CNN has been coded is a way that the number of filter , size of filters and activation function can be changed .
-
+    
+    #Defining the CNN for classification
     model = CNNModel(num_classes=NUM_CLASSES,
                  filters=config.filters,
                  filter_policy=config.filter_policy,
                  activation=config.activation,
                  batch_norm=config.batch_norm,
                  dropout=config.dropout , kernel_size=3,dense_neurons=128).to(device)
+
+    #Training the network :
+    def sweep_train() function is provided to do training and validation 
+
+    
        
