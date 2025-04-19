@@ -27,11 +27,11 @@ Github Report Link - https://github.com/alokgaurav04/DA6401_Assignment_2
     For Flexibility , the code for CNN has been coded is a way that the number of filter , size of filters and activation function can be changed .
     
     #Defining the CNN for classification
-    model = CNNModel(num_classes=NUM_CLASSES,
-                 filters=config.filters,
-                 filter_policy=config.filter_policy,
-                 activation=config.activation,
-                 batch_norm=config.batch_norm,
+    model = CNNModel(num_classes=NUM_CLASSES,        # Number of classes
+                 filters=config.filters,             # Number of filters
+                 filter_policy=config.filter_policy, # Filter organisation (same,half,double)
+                 activation=config.activation,       # Activation function
+                 batch_norm=config.batch_norm,       # Batch Normalisation
                  dropout=config.dropout , kernel_size=3,dense_neurons=128).to(device)
 
     #Training the network :
