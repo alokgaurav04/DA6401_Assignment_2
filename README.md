@@ -10,6 +10,14 @@ Github Report Link - https://github.com/alokgaurav04/DA6401_Assignment_2
    #Question - 1 :
    
     Code for CNN is provided in github with the name "Assignment_Part_A.ipynb"
+
+    # I used google colab for training using GPU and uploaded the iNaturalist.zip file to google drive , hence I need to mount the drive first 
+    from google.colab import drive
+    drive.mount('/content/drive')   
+
+    # Unzip the iNaturalist.zip file on google drive
+    !unzip -q /content/drive/MyDrive/nature_12K.zip -d /content
+   
     
     For Flexibility , the code for CNN has been coded is a way that the number of filter , size of filters and activation function can be changed .
 
