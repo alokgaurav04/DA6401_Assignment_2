@@ -6,7 +6,7 @@ Github Report Link - https://github.com/alokgaurav04/DA6401_Assignment_2
 
 # PART - A : Training from scratch
 
-   # Assignment_2_part_A.ipynb"
+   # Assignment_2_part_A.ipynb
    
     Code for CNN is provided in github with the name "Assignment_2_Part_A.ipynb"
 
@@ -43,7 +43,7 @@ Github Report Link - https://github.com/alokgaurav04/DA6401_Assignment_2
     
 # PART - B : Fine-tuning a pre-trained model
 
-   # Assignment_2_Part_B.ipynb"
+   # Assignment_2_Part_B.ipynb
 
       Code for fine-tuning is provided in github with the name "Assignment_2_Part_B.ipynb"      
 
