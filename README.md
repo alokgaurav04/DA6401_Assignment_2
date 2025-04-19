@@ -7,7 +7,7 @@ Github Report Link - https://github.com/alokgaurav04/DA6401_Assignment_2
 
 # PART - A : Training from scratch
 
-   # Assignment_2_Part_A.ipynb"
+   # Assignment_2_part_A.ipynb"
    
     Code for CNN is provided in github with the name "Assignment_2_Part_A.ipynb"
 
@@ -17,6 +17,10 @@ Github Report Link - https://github.com/alokgaurav04/DA6401_Assignment_2
 
     # Unzip the iNaturalist.zip file on google drive
     !unzip -q /content/drive/MyDrive/nature_12K.zip -d /content
+
+    #iNaturalist_12k.zip file contains 2 folders ,train and val
+    # So , I have divided train folder into train and val dataset in the ratio of 8:2 .
+    # and I have used val folder as test dataset.
 
     # Set the directory path , if using local computer then this path needs to be changed
     DATA_DIR = "/content/inaturalist_12K"
@@ -34,5 +38,20 @@ Github Report Link - https://github.com/alokgaurav04/DA6401_Assignment_2
     #Training the network :
     def sweep_train() function is provided to do training and validation 
 
+    #Test set 
+    Best Model is saved in wandb to perform classification on test set data.
+
     
+# PART - B : Fine-tuning a pre-trained model
+
+   # Assignment_2_Part_B.ipynb"
+
+      Code for fine-tuning is provided in github with the name "Assignment_2_Part_B.ipynb"      
+
+      - Training and Validation is performed on ResNet50
+      - All layers except last k layers are frozen (In my code k=2)
+      - Best validation accuracy model is saved and test accuracy is evaluated on the best model
+      - Test Accuracy is the final output 
+
+      
        
